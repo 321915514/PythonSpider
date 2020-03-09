@@ -1,0 +1,87 @@
+window.myConfig = {
+  rootURL: "https://careers.tencent.com",
+  jobdetailURL: "jobcategory.html?",
+  cdnRootURL: "https://cdn.multilingualres.hr.tencent.com",
+  logoutURL: "https://careers.tencent.com/tencentcareer/api/user/LogOut",
+  loginProxyURL:"https://smartproxy.tencent.com/connect/login",
+  appId: "careers",
+  ErrCode:{
+    ErrUserNotLogin: "E1001", //用户未登陆测试
+    ErrIPHasbeenChanged: "E1002", //IP已经改变
+    ParamError: "E1003", //参数错误
+    SystemError: "E1004", //系统错误
+    ErrPostNotExist: "E1005", //岗位不存在(停招）
+    ErrAlreadyCollectedPost: "E1006", //已经收藏过该岗位
+
+    ErrEmailNotExist: "E1007", //绑定的Email不存在
+    ErrSendVerifyCode: "E1008", //发送邮箱验证码错误
+    ErrVeriryToFast:  "E1009", //获取邮件验证码超出频率（1分钟）
+    ErrVerifyCode: "E1010", //验证码错误
+    ErrVerifyCodeExperied: "E1011", //验证码已失效
+
+    //简历相关
+    ErrGetResume: "E1012",  //获取简历失败
+    ErrSaveResume: "E1013",  //保存简历失败
+    ErrFileNotExist: "E1014", //上传文件不存在
+    ErrOldResumeNotFound: "E1015", //找不到以前的简历
+    ErrUploadResume: "E1016", //上传并解析简历失败
+    ErrUploadWork: "E1017",//上传作品失败
+
+    ErrLoginFailed: "E1018", //登录失败
+
+    ErrFailedGetApplyPost: "E1019", //获取应聘记录失败
+    ErrApplyPost: "E1020", //应聘岗位失败
+
+    ErrFailedGetPostCols: "E1021", //获取岗位收藏失败
+    ErrFaildColPost: "E1022", //收藏岗位失败
+    ErrNotColPost: "E1023", //您没有收藏该岗位
+    ErrFailedCancelColPost: "E1024", //取消收藏岗位失败
+
+    ErrFailedGetGroupCategory: "E1025", //获取岗位分组失败
+    ErrFailedGetGroupPost: "E1026", //获取group定义的岗位失败
+
+    //增加
+    ErrNotVerified: "E1027", //你还没有通过身份验证
+    ErrNotCompletedResume: "E1028", //应聘的时候发现还没完善简历
+    ErrNewResumeExist: "E1029", //已经创建了新简历
+    ErrFaildGetSource: "E1030", //获取资源失败
+    ErrFailedToRemoveFile: "E1031", //删除文件失败
+    ErrNotAllowApplyInday: "E1032", //当天不允许申请同一个岗位
+    ErrStartDateBigThanEndDate: "E1033", //开始时间大于结束时间
+
+    //简历验证-基本信息
+    ErrResumeNameIsEmpty: "E1034",//简历姓名为能为空。
+    ErrResumeMobileIsEmpty: "E1035", //简历手机号码不能为空。
+    ErrResumeEmailIsEmpty: "E1036", //简历邮箱不能为空。
+    ErrResumeCountryIsEmpty: "E1037", //国家不能为空。
+    //简历验证-工作经验
+    ErrExpTitleIsEmpty: "E1038",  //工作职位不能为空。
+    ErrExpCompanyNameIsEmpty: "E1039", //公司名称不能为空。
+    ErrExpStartDateIsEmpty: "E1040", //工作开始时间不能为空
+    ErrExpDescIsEmpty: "E1041", //工作描述不能为空。
+    //简历验证-教育经历
+    ErrEduSchooleIsEmpty: "E1042", //学校名称不能为空。
+    ErrEduMajorIsEmpty: "E1043", //专业不能为空。
+    ErrEduDegreeIsEmpty:  "E1044", //学历不能为空
+    ErrEduStartDateIsEmpty: "E1045", //学历开始时间不能为空
+    ErrEduEndDateIsEmpty: "E1046", //学历结束时间不能为空
+
+    ErrResumeEmailIsWrong: "E1047", //email格式错误。
+    ErrResumeMobileIsWrong: "E1048", //手机号码格式错误。
+
+    ErrUserNoAdmin: "E1201", //非系统管理员
+    ErrRiskTip: "E1202", //系统潜在风险
+    ErrBeyondUploadTimes: "E1203", //超过每天上线次数
+
+    //简历岗位中台保存信息
+    ErrResumeNotSupport: "E10161", //不支持的简历格式
+    ErrResumeTooBig: "E10162", //太大
+    ErrResumeUploadFail: "E10163",//上传cos失败
+    ErrResumeParseFail: "E10164",
+    ErrResumePassFail: "E10165",
+
+    ErrWorkNotSupport: "E10171", //不支持的作品格式
+    ErrWorkTooBig: "E10172",
+    ErrWorkUploadFail: "E10173"
+  }
+}
